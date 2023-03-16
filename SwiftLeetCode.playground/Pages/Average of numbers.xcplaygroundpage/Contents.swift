@@ -11,7 +11,7 @@ import UIKit
 
 // Первый варинт
 
-func firstAverageOf(numbers: Double...) -> Double {
+func getFirstAverageOf(numbers: Double...) -> Double {
     var result = 0.0
 
     for number in numbers {
@@ -23,7 +23,7 @@ func firstAverageOf(numbers: Double...) -> Double {
     return result
 }
 
-let firstResult = round(firstAverageOf(numbers: 5, 5, 5, 5) * 100 / 100)
+let firstResult = round(getFirstAverageOf(numbers: 5, 5, 5, 5) * 100 / 100)
 
 print("Среднее арифметическое: \(firstResult)\n")
 
@@ -31,7 +31,7 @@ print("Среднее арифметическое: \(firstResult)\n")
 // Второй вариант
 
 // В данном случае возвращаем кортеж (массив наших чисел и результат)
-func secondAverageOf(numbers: Double...) -> ([Double], Double)  {
+func getSecondAverageOf(numbers: Double...) -> ([Double], Double)  {
     // Функция высшего порядка(в данном случае складвает все элементы массива)
     let sum = numbers.reduce(0, +)
     let result = sum / Double(numbers.count)
@@ -39,7 +39,7 @@ func secondAverageOf(numbers: Double...) -> ([Double], Double)  {
     return (numbers, result)
 }
 
-let secondResult = secondAverageOf(numbers: 7, 1, 3, 5)
+let secondResult = getSecondAverageOf(numbers: 7, 1, 3, 5)
 
 /*
  map - функция высшего порядка, в данном случае перебирает все

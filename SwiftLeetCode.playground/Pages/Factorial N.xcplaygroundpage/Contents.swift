@@ -1,6 +1,6 @@
 // Найти факториал числа N
 
-func factorialOf(number: Int) -> (Int, Int) {
+func getFactorialOf(number: Int) -> (Int, Int) {
     guard number > 0 else { return (number, 0) }
         
     var factorial = 1
@@ -12,6 +12,6 @@ func factorialOf(number: Int) -> (Int, Int) {
     return (number, factorial)
 }
 
-let factorial = factorialOf(number: 5)
+let factorial = getFactorialOf(number: 5)
 
 print("Factorial of number \(factorial.0) = \(factorial.1)")

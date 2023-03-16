@@ -3,5 +3,9 @@
     <pages>
         <page name='Average of numbers'/>
         <page name='Factorial N'/>
+        <page name='Min And Max Element '/>
+        <page name='Reverse Array'/>
+        <page name='Sum between min and max element'/>
+        <page name='Min and Max Element Index'/>
     </pages>
 </playground>
