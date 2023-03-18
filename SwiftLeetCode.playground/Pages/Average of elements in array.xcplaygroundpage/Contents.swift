@@ -1,13 +1,13 @@
 // Среднее арифметическое элементов массива
 
-func averageOfElements(in numbers: [Int]) -> Double {
+func getAverageOfElements(in numbers: [Int]) -> Double {
     let sum = Double(numbers.reduce(0, +))
     let average = sum / Double(numbers.count)
     
     return average
 }
 
-averageOfElements(in: [4, 7, 12, 5])
+getAverageOfElements(in: [4, 7, 12, 5])
 
 // Использование функции map и замыканий
 
