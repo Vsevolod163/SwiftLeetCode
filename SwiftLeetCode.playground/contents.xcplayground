@@ -7,5 +7,6 @@
         <page name='Reverse Array'/>
         <page name='Sum between min and max element'/>
         <page name='Min and Max Element Index'/>
+        <page name='Average of elements in array'/>
     </pages>
 </playground>
