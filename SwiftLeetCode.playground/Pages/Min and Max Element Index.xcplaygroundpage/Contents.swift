@@ -28,3 +28,10 @@ let numbers = [-100, 50, 5, -7, 19]
 
 print("Массив: \(numbers)\nИндекс минимального элемента = \(getIndexOfMinElement(in: numbers))\nИндекс максимального элемента = \(getIndexOfMaxElement(in: numbers))")
 
+
+let maxElement = numbers.max()
+
+if let maxElement {
+    let index = numbers.firstIndex(of: maxElement)
+}
+
