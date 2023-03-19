@@ -13,5 +13,37 @@ func secondDigitIn(number: Int) -> Int {
 
 secondDigitIn(number: 179)
 
+// Работа со строками
 
+let string = "Hello, world!"
+
+// Смещение начального индекса
+let start = string.index(string.startIndex, offsetBy: 1)
+
+string[start]
+string.count
+string.endIndex
+
+// Берет количество символов с конца
+string.suffix(2)
+
+// Берет количество символов с начала
+let prefix = string.prefix(3)
+// Перевод значения в строку
+let stringTwo = String(prefix)
+
+
+// Пример
+
+let number = 15215
+
+// Через остаток
+let result = number / 1000 % 10
+
+// Через строку
+
+let stringNumber = String(number)
+
+let indexOfNumber = stringNumber.index(stringNumber.startIndex, offsetBy: 1)
+stringNumber[indexOfNumber]
 
