@@ -10,5 +10,6 @@
         <page name='Average of elements in array'/>
         <page name='Count of max elements in array'/>
         <page name='Is even number'/>
+        <page name='Second digit of number'/>
     </pages>
 </playground>
