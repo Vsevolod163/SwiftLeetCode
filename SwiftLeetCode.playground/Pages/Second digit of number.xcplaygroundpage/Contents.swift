@@ -1,14 +1,14 @@
 // Найти вторую цифру числа
 
 func secondDigitIn(number: Int) -> Int {
-    let numberIntToString = String(number)
-    let numberStringToArray = Array(numberIntToString)
+    let numberToString = String(number)
+    let digitsOfNumber = Array(numberToString)
     // Перевод элементов массива из String в Int
-    let numbers = numberStringToArray.compactMap { Int(String($0)) }
+    let digits = digitsOfNumber.compactMap { Int(String($0)) }
     
-    guard numbers.count > 1 else { return 0 }
+    guard digits.count > 1 else { return 0 }
     
-    return numbers[1]
+    return digits[1]
 }
 
 secondDigitIn(number: 179)
@@ -42,8 +42,8 @@ let result = number / 1000 % 10
 
 // Через строку
 
-let stringNumber = String(number)
+let numberToString = String(number)
 
-let indexOfNumber = stringNumber.index(stringNumber.startIndex, offsetBy: 1)
-stringNumber[indexOfNumber]
+let indexOfDigit = numberToString.index(numberToString.startIndex, offsetBy: 1)
+numberToString[indexOfDigit]
 
