@@ -30,3 +30,22 @@ getEven(from: numbers)
 let evenNumbers = numbers.filter { $0.isMultiple(of: 2) }
 
 print(evenNumbers)
+
+// Вывести все четные числа от 1 до N
+
+func getEvenNumbersFromOne(to n: Int) -> String {
+    let numbers = Array(1...n)
+    let result = numbers.reduce("") { $1.isMultiple(of: 2)
+        ? $0 + String($1) + " "
+        : $0 + "" }
+
+    return result
+}
+
+func getEvenNumbersFromOne(to n: Int) -> [Int] {
+    Array(1...n).filter { $0.isMultiple(of: 2) }
+}
+
+// Если есть 2 одинаковые функции, нужно указывать, какое значение возвращаешь
+getEvenNumbersFromOne(to: 10) as String
+
