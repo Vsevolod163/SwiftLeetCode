@@ -20,7 +20,7 @@ let string = "Hello, world!"
 // Смещение начального индекса
 let start = string.index(string.startIndex, offsetBy: 1)
 
-string[start]
+string[start...string.index(string.startIndex, offsetBy: 3)]
 string.count
 string.endIndex
 
