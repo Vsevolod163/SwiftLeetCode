@@ -14,5 +14,6 @@
         <page name='Enum weekdays'/>
         <page name='Multiplication of pairs'/>
         <page name='Sum of positive and  negative'/>
+        <page name='Negative to positive'/>
     </pages>
 </playground>
