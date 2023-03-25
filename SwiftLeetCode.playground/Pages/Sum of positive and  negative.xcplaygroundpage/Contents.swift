@@ -18,6 +18,12 @@ func findSumOfPositiveElementsIn(numbers: [Int]) -> Int {
     numbers.reduce(0) { $1 > 0 ? $0 + $1 : $0 }
 }
 
+func findSumOfNegativeElementsIn(numbers: [Int]) -> Int {
+    numbers.reduce(0) { $1 < 0 ? $0 + $1 : $0 }
+}
+
+
 let numbers = createRandomArray(countOfElements: 12)
 
 findSumOfPositiveElementsIn(numbers: numbers)
+findSumOfNegativeElementsIn(numbers: numbers)
