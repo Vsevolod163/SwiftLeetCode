@@ -12,5 +12,6 @@
         <page name='Is even number'/>
         <page name='Second digit of number'/>
         <page name='Enum weekdays'/>
+        <page name='Multiplication of pairs'/>
     </pages>
 </playground>
