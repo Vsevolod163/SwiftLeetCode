@@ -5,20 +5,20 @@
  Результат запишите в новом массиве.
 */
 
-func getMultiplicationOfPairsIn(numbers: [Int]) -> [Int] {
-    var multiplicationOfNumbers: [Int] = []
+func getPairProductIn(numbers: [Int]) -> [Int] {
+    var result: [Int] = []
     let indexOfLastElement = numbers.count - 1
     
-    for index in numbers.indices {
-        if index < indexOfLastElement - index {
-            let multplication = numbers[index] * numbers[indexOfLastElement - index]
-            multiplicationOfNumbers.append(multplication)
-        } else if index == indexOfLastElement - index {
-            multiplicationOfNumbers.append(numbers[index])
-        }
+    for index in 0..<numbers.count / 2 {
+        result.append(numbers[index] * numbers[indexOfLastElement - index])
     }
     
-    return multiplicationOfNumbers
+    if !numbers.count.isMultiple(of: 2) {
+        result.append(numbers[numbers.count / 2])
+    }
+    
+    return result
 }
 
-getMultiplicationOfPairsIn(numbers: [1, 5, 9, 10, 3])
+getPairProductIn(numbers: [1, 5, 15, 10, 3])
+
