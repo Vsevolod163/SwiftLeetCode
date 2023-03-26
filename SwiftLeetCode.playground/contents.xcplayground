@@ -18,5 +18,6 @@
         <page name='Bubble sort'/>
         <page name='Choice sort'/>
         <page name='Binary search'/>
+        <page name='Find element'/>
     </pages>
 </playground>
