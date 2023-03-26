@@ -17,5 +17,6 @@
         <page name='Reverse elements'/>
         <page name='Bubble sort'/>
         <page name='Choice sort'/>
+        <page name='Binary search'/>
     </pages>
 </playground>
