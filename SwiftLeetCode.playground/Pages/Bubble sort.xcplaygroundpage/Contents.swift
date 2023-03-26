@@ -1,9 +1,9 @@
 
-func bubbleSort(numbers: [Int]) -> [Int] {
+func makeBubbleSort(numbers: [Int]) -> [Int] {
     var sortedNumbers: [Int] = []
     sortedNumbers = numbers
 
-    for index in sortedNumbers.indices where index < sortedNumbers.count - 1 {
+    for index in sortedNumbers.indices {
         for secondIndex in sortedNumbers.indices where secondIndex > index {
             if sortedNumbers[index] > sortedNumbers[secondIndex] {
                 let temporary = sortedNumbers[index]
@@ -16,6 +16,6 @@ func bubbleSort(numbers: [Int]) -> [Int] {
     return sortedNumbers
 }
 
-let numbers = [7, 5, 1, -5, 2]
+let numbers = [7, 5, 1, -5, -10]
 
-bubbleSort(numbers: numbers)
+makeBubbleSort(numbers: numbers)

@@ -16,5 +16,6 @@
         <page name='Sum of positive and  negative'/>
         <page name='Reverse elements'/>
         <page name='Bubble sort'/>
+        <page name='Choice sort'/>
     </pages>
 </playground>
