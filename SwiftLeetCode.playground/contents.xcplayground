@@ -19,5 +19,6 @@
         <page name='Choice sort'/>
         <page name='Binary search'/>
         <page name='Find index of element'/>
+        <page name='Valid string'/>
     </pages>
 </playground>
