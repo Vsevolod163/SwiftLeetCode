@@ -20,5 +20,6 @@
         <page name='Binary search'/>
         <page name='Find index of element'/>
         <page name='Valid string'/>
+        <page name='Quick sort'/>
     </pages>
 </playground>
