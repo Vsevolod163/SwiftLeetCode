@@ -21,5 +21,6 @@
         <page name='Find index of element'/>
         <page name='Valid string'/>
         <page name='Quick sort'/>
+        <page name='Find lost numbers'/>
     </pages>
 </playground>
